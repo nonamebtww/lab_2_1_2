@@ -203,10 +203,10 @@ partial class Task2Page {
     // text_result
     // 
     this.text_result.Anchor = System.Windows.Forms.AnchorStyles.None;
-    this.text_result.Location = new System.Drawing.Point(573, 186);
+    this.text_result.Location = new System.Drawing.Point(568, 186);
     this.text_result.Name = "text_result";
     this.text_result.ReadOnly = true;
-    this.text_result.Size = new System.Drawing.Size(94, 20);
+    this.text_result.Size = new System.Drawing.Size(104, 20);
     this.text_result.TabIndex = 3;
     // 
     // lbl_task

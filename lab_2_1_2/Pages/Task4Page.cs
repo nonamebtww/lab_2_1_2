@@ -7,7 +7,7 @@ public partial class Task4Page : UserControl {
     InitializeComponent();
   }
 
-  private string GetTimeFromHours(int hours) {
+  private string GetTimeFromHours(double hours) {
     if (hours < 0 || hours > 24) {
       return string.Empty;
     }
@@ -28,7 +28,7 @@ public partial class Task4Page : UserControl {
   private void text_hours_TextChanged(object sender, EventArgs e) {
     var box = (TextBox)sender;
 
-    if (string.IsNullOrEmpty(box.Text) || !int.TryParse(box.Text, out var hours)) {
+    if (string.IsNullOrEmpty(box.Text) || !double.TryParse(box.Text, out var hours)) {
       text_time.Text = string.Empty;
       return;
     }

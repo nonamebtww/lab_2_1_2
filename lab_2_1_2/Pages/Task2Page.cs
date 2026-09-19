@@ -42,10 +42,17 @@ public partial class Task2Page : UserControl {
   }
 
   private void UpdateResult() {
+    var x = new Point(_x_x, _x_y);
+    var y = new Point(_y_x, _y_y);
+    var z = new Point(_z_x, _z_y);
+
+    if (x == y || x == z || y == z) {
+      text_result.Text = "Неверные значения!";
+      return;
+    }
+    
     text_result.Text = FunctionResult(
-      new Point(_x_x, _x_y),
-      new Point(_y_x, _y_y),
-      new Point(_z_x, _z_y)
+      x, y, z
     ).ToString(CultureInfo.InvariantCulture);
   }
 
